@@ -1,0 +1,27 @@
+Projeto pra criação de um CRM
+
+Fase inicial:
+- Criar um ambiente virtual
+- Instalar o Django
+- Criar o Projeto
+
+Fase de desenvolvimento:
+- Criação da APP das páginas do Projeto
+- Criação dos Templates (Home e Footer)
+- Configuração do Front - CSS (https://tailwindcss.com/docs/installation)
+- Criar Base da aplicação
+
+Fase avançada: 
+- Autenticação de usuários (Criar APP nome: user)
+  - Criar o banco de dados (Model)
+  - Criar o superuser
+  - Desenvolver o MVC
+  - Páginas (CRUD)
+  - URLs
+
+FrontEnd (Dashboard)
+- CRUD (Leads)
+- Pagamentos
+- Deploy
+
+
