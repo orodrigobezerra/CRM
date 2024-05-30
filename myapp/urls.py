@@ -19,9 +19,13 @@ from django.urls import path
 
 from django.contrib.auth import views
 from core.views import index, about
+from users.views import register
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index"),
     path('about/', about, name="about"),
+    path('register/', register, name="register"),
+    path('login/', views.LoginView.as_view(template_name='users/login.html'), name="login"),
+    path('logout/', views.LogoutView.as_view(), name="logout"),
 ]

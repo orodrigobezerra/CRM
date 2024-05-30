@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Register RBN {% endblock %}
+
+{% block content %}
+
+  <h1 class="text-xl">
+    Register
+  </h1>
+
+  <form method="post" action=".">
+    {% crsf_token %}
+
+    {{ form.as.p }}
+
+    <button class="'py-4 px-6 bg-teal-500 text-white rounded-xl" ="submit">Submit</button>
+  </form>
+
+{% endblock content %}
