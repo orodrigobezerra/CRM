@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
-from .models import Users
+from .models import usersprofile
 
 def register(request):
   if request.method == 'POST':
@@ -8,7 +8,7 @@ def register(request):
 
     if form.is_valid():
       user = form.save()
-      Users.objects.create(user=user)
+      usersprofile.objects.create(user=user)
 
       return redirect('/login/')
     
@@ -17,6 +17,6 @@ def register(request):
 
   form = UserCreationForm
 
-  return render(request, 'user/register', {
+  return render(request, 'users/register.html', {
     'form': form
   })

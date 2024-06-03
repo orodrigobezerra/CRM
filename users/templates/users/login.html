@@ -8,10 +8,10 @@
     Login
   </h1>
 
-  <form method="post" action=".">
-    {% crsf_token %}
+  <form method="POST" action=".">
+    {% csrf_token %}
 
-    {{ form.as.p }}
+    {{ form.as_p }}
 
     <button class="'py-4 px-6 bg-teal-500 text-white rounded-xl" ="submit">Login</button>
   </form>
